@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str;
+        int lines = 0;  
+        try
+        {
+            while(true)
+            {
+                str=scan.nextLine();
+                if(str == null)
+                return;
+                if(lines>0)
+                System.out.println();
+                System.out.print( (lines+1) +" " + str);
+                lines++;
+            }
+        }
+        catch(Exception e){
+
+    }
+    }
+}
+//we have done this through try and catch can also be done in simple way like
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String ab=sc.nextLine();
+        int a=0;
+        while(ab!=null){
+            System.out.printf("%d %s\n",++a,ab);
+            ab=sc.nextLine();
+        }
+        sc.close();
+    }
+}
